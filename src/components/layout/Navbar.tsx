@@ -125,8 +125,7 @@ export default function Navbar() {
       animate={{ opacity: 1, filter: "blur(0px)", scale: 1 }}
       exit={{ opacity: 0, filter: "blur(20px)", scale: 0.95 }}
       transition={{ duration: 0.35, ease: "easeOut" }}
-      animate={{ opacity: 1, filter: "blur(0px)" }}
-      transition={{ duration: 0.35, ease: "easeOut" }}
+    
       className={`sticky top-0 z-50 
 border-b border-slate-200/60
 bg-white/80 backdrop-blur-xl

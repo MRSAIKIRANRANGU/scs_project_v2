@@ -6,6 +6,19 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 
 
+type Particle = {
+  left: string;
+  top: string;
+  duration: number;
+  delay: number;
+};
+
+type ParticlesState = {
+  hero: Particle[];
+  mission: Particle[];
+  cta: Particle[];
+};
+
 
 // Top Achievers Data
 const topAchievers = [
@@ -107,7 +120,7 @@ export default function HomeSections() {
     target: statsRef,
     offset: ["start end", "end start"],
   });
-  const [particles, setParticles] = useState<any>({
+  const [particles, setParticles] = useState<ParticlesState>({
   hero: [],
   mission: [],
   cta: [],
@@ -235,6 +248,7 @@ useEffect(() => {
           
           {/* Floating Elements */}
           {particles.hero.map((p, i) => (
+
             <motion.div
               key={i}
               animate={{
