@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+
+  --brand-blue: #3652a1;
+  --brand-blue-dark: #0a2a59;
+  --brand-blue-light: #5a73ba;
+
+  --brand-red: #c2002e;
+  --brand-red-light: #dd1a49;
+
+  --brand-ink: #1f2937;
+  --brand-muted: #5b6472;
+
+  --header-maroon: #800000;
+  --header-maroon-dark: #6e0000;
+  --header-link: #333333;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  min-height: 100%;
+}
+
+body {
+  background-color: #ffffff !important;
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root,
+#__next {
+  background: #ffffff;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--brand-blue) 25%, white);
+  color: var(--brand-blue-dark);
+}
