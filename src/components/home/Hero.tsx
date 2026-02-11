@@ -188,7 +188,7 @@ export default function Hero() {
       </div>
 
       {/* Below Slider Section */}
-      <div className="bg-gradient-to-b from-white to-slate-50 py-16">
+      {/* <div className="bg-gradient-to-b from-white to-slate-50 py-16">
         <div className="mx-auto max-w-7xl px-4">
           <h2 className="mb-12 text-center text-4xl font-serif text-[var(--brand-blue)]">
             Featured Highlights
@@ -240,7 +240,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
